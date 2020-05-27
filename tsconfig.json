@@ -1,0 +1,32 @@
+{
+  "ts-node": {
+    "transpileOnly": true,
+    "logError": true,
+    "emit": true
+  },
+  "compilerOptions": {
+    "skipDefaultLibCheck": true,
+    "preserveConstEnums": true,
+    "strictNullChecks": true,
+    "sourceMap": false,
+    "allowJs": false,
+    "target": "ES2018",
+    "module": "CommonJS",
+    "outDir": "dist",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "lib": [
+      "ES2018"
+    ],
+    "baseUrl": "./",
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "**/node_modules",
+    "**/dist",
+    "**/.*/dist",
+    "**/.*/"
+  ]
+}
