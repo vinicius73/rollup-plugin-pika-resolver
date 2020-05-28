@@ -1,11 +1,24 @@
 {
   "name": "@vinicius73/rollup-plugin-pika-resolver",
-  "version": "0.1.0-alfa",
+  "description": "Generate the bundle of your project using Pika CDN for external dependencies.",
+  "keywords": [
+    "rollup-plugin",
+    "rollup",
+    "pika",
+    "pika-cdn",
+    "cdn"
+  ],
+  "version": "0.1.1-beta",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "repository": "https://github.com/vinicius73/rollup-plugin-pika-resolver",
   "author": "Vinicius Reis <luiz.vinicius73@gmail.com>",
   "license": "MIT",
+  "private": false,
+  "files": [
+    "dist/*",
+    "src/*"
+  ],
   "scripts": {
     "build": "rm -rf dist/ && tsc --declaration",
     "postinstall": "yarn run build"
