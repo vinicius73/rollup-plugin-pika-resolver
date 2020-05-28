@@ -8,9 +8,9 @@
     "pika-cdn",
     "cdn"
   ],
-  "version": "0.1.1-beta",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "version": "0.1.2-beta",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": "https://github.com/vinicius73/rollup-plugin-pika-resolver",
   "author": "Vinicius Reis <luiz.vinicius73@gmail.com>",
   "license": "MIT",
