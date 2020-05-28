@@ -23,7 +23,8 @@
     "build": "rm -rf dist/ && tsc -d",
     "lint": "eslint src/*.ts",
     "postinstall": "yarn run build",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "ci": "yarn run lint && yarn run test --ci"
   },
   "dependencies": {
     "find-up": "^4.1.0"
