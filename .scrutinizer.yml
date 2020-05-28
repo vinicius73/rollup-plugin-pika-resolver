@@ -10,6 +10,11 @@ build:
   environment:
     node:
       version: v12.16.1
+  nodes:
+    analysis:
+      tests:
+        override:
+          - js-scrutinizer-run
 
   tests:
     override:
