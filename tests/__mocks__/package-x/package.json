@@ -1,0 +1,5 @@
+{
+  "name": "package-x",
+  "version": "1.x.x",
+  "main": "dist/index.js"
+}

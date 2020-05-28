@@ -1,0 +1,4 @@
+{
+  "name": "package-z",
+  "main": "dist/index.js"
+}

@@ -4,11 +4,9 @@ import { PluginContext } from 'rollup'
 
 const detectVersion = async (id: string): Promise<string | null> => {
   const cwd = path.dirname(require.resolve(id))
-  const pkgFile = await findUp('package.json', { cwd })
+  const pkgFile = await findUp('package.json', { cwd }) as string
 
-  return pkgFile
-    ? require(pkgFile).version
-    : null
+  return require(pkgFile).version
 }
 
 const getVersion = async function (context: PluginContext, cache: Map<string, string | null>, moduleId: string): Promise<string | null> {

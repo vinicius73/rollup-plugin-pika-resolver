@@ -22,5 +22,15 @@ module.exports = {
   ],
   rules: {
     '@typescript-eslint/explicit-function-return-type': 'off'
-  }
+  },
+  overrides: [
+    {
+      files: [
+        '**/tests/**/*.{j,t}s?(x)'
+      ],
+      env: {
+        jest: true
+      }
+    }
+  ]
 }
