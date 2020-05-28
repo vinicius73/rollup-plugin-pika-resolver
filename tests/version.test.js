@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-const { detectVersion, getVersion } = require('../dist/version')
+const { detectVersion, getVersion } = require('../src/version')
 
 jest.mock('package-x')
 jest.mock('package-z')

@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-const { pikaResolver } = require('../dist/index.js')
+const { pikaResolver } = require('../src/index')
 
 jest.mock('package-x')
 
