@@ -14,7 +14,7 @@ build:
   tests:
     override:
       -
-        command: 'npm ci'
+        command: 'yarn run ci'
         coverage:
           file: 'coverage/clover.xml'
           format: 'clover'
