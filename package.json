@@ -22,7 +22,7 @@
   "scripts": {
     "build": "rm -rf dist/ && tsc -d",
     "lint": "eslint src/*.ts",
-    "prepublish": "yarn run build",
+    "prepare": "yarn run build",
     "test": "jest --coverage",
     "ci": "yarn run lint && yarn run test --ci"
   },
