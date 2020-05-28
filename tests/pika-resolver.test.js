@@ -15,5 +15,5 @@ test('pikaResolver', async () => {
 
   expect(
     await resolver.resolveId('package-y')
-  ).toEqual('package-y')
+  ).toEqual(undefined)
 })

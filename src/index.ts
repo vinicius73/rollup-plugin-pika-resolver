@@ -10,15 +10,13 @@ function pikaResolver ({ modules, cdnHost = PIKA_CDN_HOST }: { modules: string[]
   return {
     name: 'pika-resolver',
     async resolveId (id: string) {
-      if (!modules.includes(id)) {
-        return id
-      }
+      if (modules.includes(id)) {
+        const version = await getVersion(this, cache, id)
 
-      const version = await getVersion(this, cache, id)
-
-      return {
-        id: `${cdnHost}/${version}`,
-        external: true
+        return {
+          id: `${cdnHost}/${version}`,
+          external: true
+        }
       }
     }
   } as Plugin
