@@ -2,6 +2,12 @@
 
 Generate the bundle of your project using [Pika CDN](https://www.pika.dev/cdn) for external dependencies.
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/5fa12e0c2482b3da931f/maintainability)](https://codeclimate.com/github/vinicius73/rollup-plugin-pika-resolver/maintainability)
+[![Build Status](https://scrutinizer-ci.com/g/vinicius73/rollup-plugin-pika-resolver/badges/build.png?b=master)](https://scrutinizer-ci.com/g/vinicius73/rollup-plugin-pika-resolver/build-status/master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/vinicius73/rollup-plugin-pika-resolver/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/vinicius73/rollup-plugin-pika-resolver/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/vinicius73/rollup-plugin-pika-resolver/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/vinicius73/rollup-plugin-pika-resolver/?branch=master)
+
+
 ## Install
 ```sh
 yarn install @vinicius73/rollup-plugin-pika-resolver rollup -D
