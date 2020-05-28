@@ -1,4 +1,4 @@
-# rollup-plugin-pika-resolver
+# @vinicius73/rollup-plugin-pika-resolver
 
 Generate the bundle of your project using [Pika CDN](https://www.pika.dev/cdn) for external dependencies.
 
@@ -20,7 +20,7 @@ module.exports = {
     format: 'es'
   },
   plugins: [pikaResolver({
-    modules: ['axios']
+    modules: ['axios', 'lodash-es']
   })]
 }
 ```
@@ -29,10 +29,14 @@ module.exports = {
 
 ```js
 import axios from 'axios'
+import { get } from 'lodash-es'
 
 const run = async () => {
   const { data } = await axios.get('https://reqres.in/api/users/2')
-  console.log(data)
+  
+  console.log(
+    get(data, ['data', 'email'])
+  )
 }
 
 run()
@@ -43,14 +47,31 @@ run()
 > output
 ```js
 import axios from 'https://cdn.pika.dev/axios@0.19.2';
+import { get } from 'https://cdn.pika.dev/lodash-es@4.17.15';
 
 const run = async () => {
   const { data } = await axios.get('https://reqres.in/api/users/2');
-  console.log(data);
+  console.log(get(data, ['data', 'email']));
 };
 
 run()
   .then(() => console.log('All done'))
   .catch(err => console.error(err));
-
 ```
+
+## Options
+
+### `modules`
+
+Type: `Array[...String]`
+Required: `true`
+
+An array with modules that will be transformed into cdn import.
+
+### `cdnHost`
+
+Type: `String`
+Required: `false`
+Default: `https://cdn.pika.dev`
+
+Host used in imports.
