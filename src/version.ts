@@ -6,6 +6,7 @@ const detectVersion = async (id: string): Promise<string | null> => {
   const cwd = path.dirname(require.resolve(id))
   const pkgFile = await findUp('package.json', { cwd }) as string
 
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
   return require(pkgFile).version
 }
 
