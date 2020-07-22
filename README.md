@@ -6,7 +6,7 @@ Generate the bundle of your project using [Pika CDN](https://www.pika.dev/cdn) f
 [![Build Status](https://scrutinizer-ci.com/g/vinicius73/rollup-plugin-pika-resolver/badges/build.png?b=master)](https://scrutinizer-ci.com/g/vinicius73/rollup-plugin-pika-resolver/build-status/master)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/vinicius73/rollup-plugin-pika-resolver/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/vinicius73/rollup-plugin-pika-resolver/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/vinicius73/rollup-plugin-pika-resolver/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/vinicius73/rollup-plugin-pika-resolver/?branch=master)
-
+![@vinicius73/rollup-plugin-pika-resolver](https://img.shields.io/npm/v/@vinicius73/rollup-plugin-pika-resolver)
 
 ## Install
 
