@@ -1,4 +1,4 @@
-# @vinicius73/rollup-plugin-pika-resolver
+# @vinicius73/rollup-plugin-skypack-resolver
 
 Generate the bundle of your project using [Skypack CDN](https://www.skypack.dev) for external dependencies.
 
@@ -11,7 +11,7 @@ Generate the bundle of your project using [Skypack CDN](https://www.skypack.dev)
 ## Install
 
 ```sh
-yarn add @vinicius73/rollup-plugin-pika-resolver rollup -D
+yarn add @vinicius73/rollup-plugin-skypack-resolver rollup -D
 ```
 
 ## Usage
@@ -22,7 +22,7 @@ On this example, [axios](https://www.pika.dev/npm/axios) and [lodash-es](https:/
 
 ```js
 //> rollup.config.js
-const { pikaResolver } = require('@vinicius73/rollup-plugin-pika-resolver')
+const { pikaResolver } = require('@vinicius73/rollup-plugin-skypack-resolver')
 
 module.exports = {
   input: 'src/index.js',

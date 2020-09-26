@@ -1,9 +1,11 @@
 {
-  "name": "@vinicius73/rollup-plugin-pika-resolver",
-  "description": "Generate the bundle of your project using Pika CDN for external dependencies.",
+  "name": "@vinicius73/rollup-plugin-skypack-resolver",
+  "description": "Generate the bundle of your project using Skypack CDN for external dependencies.",
   "keywords": [
     "rollup-plugin",
     "rollup",
+    "skypack",
+    "skypack-cdn",
     "pika",
     "pika-cdn",
     "cdn"
