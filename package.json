@@ -27,7 +27,7 @@
     "ci": "yarn run lint && yarn run test --ci"
   },
   "dependencies": {
-    "find-up": "^4.1.0"
+    "find-up": "^5.0.0"
   },
   "peerDependencies": {
     "rollup": "^2"
