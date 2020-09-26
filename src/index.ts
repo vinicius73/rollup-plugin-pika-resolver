@@ -2,13 +2,13 @@
 import { Plugin } from 'rollup'
 import { getVersion, detectVersion } from './version'
 
-const PIKA_CDN_HOST = 'https://cdn.skypack.dev'
+const SKYPACK_CDN_HOST = 'https://cdn.skypack.dev'
 
-function pikaResolver ({ modules, cdnHost = PIKA_CDN_HOST }: { modules: string[], cdnHost?: string }) {
+function skypackResolver ({ modules, cdnHost = SKYPACK_CDN_HOST }: { modules: string[], cdnHost?: string }) {
   const cache = new Map<string, string>()
 
   return {
-    name: 'pika-resolver',
+    name: 'skypack-resolver',
     async resolveId (id: string) {
       if (modules.includes(id)) {
         const version = await getVersion(this, cache, id)
@@ -22,5 +22,5 @@ function pikaResolver ({ modules, cdnHost = PIKA_CDN_HOST }: { modules: string[]
   } as Plugin
 }
 
-export { pikaResolver, detectVersion }
-export default pikaResolver
+export { skypackResolver, detectVersion }
+export default skypackResolver

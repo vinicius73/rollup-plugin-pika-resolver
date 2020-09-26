@@ -16,20 +16,20 @@ yarn add @vinicius73/rollup-plugin-skypack-resolver rollup -D
 
 ## Usage
 
-On this example, [axios](https://www.pika.dev/npm/axios) and [lodash-es](https://www.pika.dev/npm/lodash-es) need be installed as project dependencies, using [npm](https://www.npmjs.com/get-npm) or [yarn](https://classic.yarnpkg.com/en/docs/install).
+On this example, [axios](https://www.skypack.dev/npm/axios) and [lodash-es](https://www.skypack.dev/npm/lodash-es) need be installed as project dependencies, using [npm](https://www.npmjs.com/get-npm) or [yarn](https://classic.yarnpkg.com/en/docs/install).
 
-> `pikaResolver` uses your local dependencies to determine cdn version.
+> `skypackResolver` uses your local dependencies to determine cdn version.
 
 ```js
 //> rollup.config.js
-const { pikaResolver } = require('@vinicius73/rollup-plugin-skypack-resolver')
+const { skypackResolver } = require('@vinicius73/rollup-plugin-skypack-resolver')
 
 module.exports = {
   input: 'src/index.js',
   output: {
     format: 'es'
   },
-  plugins: [pikaResolver({
+  plugins: [skypackResolver({
     modules: ['axios', 'lodash-es']
   })]
 }
@@ -59,7 +59,7 @@ rullup -c
 
 ```js
 //> output
-import axios from 'https://cdn.skypack.dev/axios@0.19.2';
+import axios from 'https://cdn.skypack.dev/axios@0.20.0';
 import { get } from 'https://cdn.skypack.dev/lodash-es@4.17.15';
 
 const run = async () => {

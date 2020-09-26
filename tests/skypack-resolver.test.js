@@ -1,10 +1,10 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-const { pikaResolver } = require('../src/index')
+const { skypackResolver } = require('../src/index')
 
 jest.mock('package-x')
 
-test('pikaResolver', async () => {
-  const resolver = pikaResolver({ modules: ['package-x'] })
+test('skypackResolver', async () => {
+  const resolver = skypackResolver({ modules: ['package-x'] })
 
   expect(
     await resolver.resolveId('package-x')
@@ -18,8 +18,8 @@ test('pikaResolver', async () => {
   ).toEqual(undefined)
 })
 
-test('pikaResolver (custom cdn)', async () => {
-  const resolver = pikaResolver({ modules: ['package-x'], cdnHost: 'https://my.cdn' })
+test('skypackResolver (custom cdn)', async () => {
+  const resolver = skypackResolver({ modules: ['package-x'], cdnHost: 'https://my.cdn' })
 
   expect(
     await resolver.resolveId('package-x')
