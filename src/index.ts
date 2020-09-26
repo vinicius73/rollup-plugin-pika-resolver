@@ -2,7 +2,7 @@
 import { Plugin } from 'rollup'
 import { getVersion, detectVersion } from './version'
 
-const PIKA_CDN_HOST = 'https://cdn.pika.dev'
+const PIKA_CDN_HOST = 'https://cdn.skypack.dev'
 
 function pikaResolver ({ modules, cdnHost = PIKA_CDN_HOST }: { modules: string[], cdnHost?: string }) {
   const cache = new Map<string, string>()

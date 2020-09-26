@@ -9,7 +9,7 @@ test('pikaResolver', async () => {
   expect(
     await resolver.resolveId('package-x')
   ).toEqual({
-    id: 'https://cdn.pika.dev/package-x@1.x.x',
+    id: 'https://cdn.skypack.dev/package-x@1.x.x',
     external: true
   })
 
