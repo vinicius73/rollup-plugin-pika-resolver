@@ -15,6 +15,9 @@
   "author": "Vinicius Reis <luiz.vinicius73@gmail.com>",
   "license": "MIT",
   "private": false,
+  "engines": {
+    "node": ">=10"
+  },
   "files": [
     "dist/*",
     "src/*"
