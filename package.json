@@ -10,7 +10,7 @@
     "pika-cdn",
     "cdn"
   ],
-  "version": "2.1.1",
+  "version": "2.1.2",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": "https://github.com/vinicius73/rollup-plugin-pika-resolver",
